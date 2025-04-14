@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://localhost:1313/experience/</link>
+    <description>Recent content on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/experience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Analyst Intern</title>
+      <link>http://localhost:1313/experience/job-2/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/experience/job-2/</guid>
+      <description>&lt;h2 id=&#34;key-accomplishments&#34;&gt;Key Accomplishments:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Participated in the development of a Java-based promotional material management platform with &lt;strong&gt;Spring Boot&lt;/strong&gt;, integrating &lt;strong&gt;Docker containerization and API development&lt;/strong&gt;. Reduced code coupling by &lt;strong&gt;23%&lt;/strong&gt; and improved campaign outreach by &lt;strong&gt;25%&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Collaborated with campaign teams to classify and analyze 7,000+ promotional items. Generated actionable insights using &lt;strong&gt;Tableau&lt;/strong&gt; dashboards, improving retrieval efficiency by &lt;strong&gt;40%&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Developed a promoted &lt;strong&gt;HTML&lt;/strong&gt; layer that enhanced web accessibility and reduced node execution time by &lt;strong&gt;67%&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Business Analyst Intern</title>
+      <link>http://localhost:1313/experience/job-1/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/experience/job-1/</guid>
+      <description>&lt;h2 id=&#34;key-accomplishments&#34;&gt;Key Accomplishments:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Coordinated project timelines and deliverables for a high-concurrency number generator, integrating &lt;strong&gt;real-time analytics, data pipelines&lt;/strong&gt;, and AWS Cloud (EC2, RDS) with MySQL databases, reducing data processing time by &lt;strong&gt;30%&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Conducted in-depth analysis (&lt;strong&gt;data transformation, aggregation, summarization&lt;/strong&gt;) of 10+ senior care market reports (e.g., from Ernst &amp;amp; Young) using &lt;strong&gt;SPSS&lt;/strong&gt;; visualized findings using &lt;strong&gt;Power BI&lt;/strong&gt; dashboards to inform strategic decisions.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;technologies-used&#34;&gt;Technologies Used:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;MySQL, AWS Cloud, Power BI&lt;/li&gt;&#xA;&lt;li&gt;SPSS for statistical analysis&lt;/li&gt;&#xA;&lt;li&gt;Data visualization and reporting tools&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

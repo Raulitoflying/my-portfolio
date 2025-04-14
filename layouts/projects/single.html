@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="container project-single">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <header class="section-header">
+        <h1>{{ .Title }}</h1>
+        <p class="lead">{{ .Description }}</p>
+        {{ with .Params.technologies }}
+        <div class="mb-4">
+          <strong>Technologies:</strong> {{ . }}
+        </div>
+        {{ end }}
+      </header>
+
+      {{ with .Params.image }}
+      <div class="project-image mb-5">
+        <img src="{{ .src }}" class="img-fluid" alt="{{ $.Title }}">
+      </div>
+      {{ end }}
+
+      <div class="project-content">
+        {{ .Content }}
+      </div>
+
+      {{ with .Params.params.button }}
+      <div class="text-center mt-5">
+        <a href="{{ .URL }}" class="btn btn-primary" target="_blank">
+          <i class="{{ .icon }}"></i>
+          {{ .btnText }}
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }} 

@@ -1,0 +1,24 @@
+{{ $image := "" }}
+{{ with .Params.params.image }}
+  {{ $image = .src | absURL }}
+{{ end }}
+
+<div class="col-lg-6 mb-3">
+  <div class="card project-card h-100">
+    {{ if $image }}
+    <div class="card-img-top project-image">
+      <img src="{{ $image }}" alt="{{ $.Title }}" class="img-fluid">
+    </div>
+    {{ end }}
+    <div class="card-body">
+      <h5 class="card-title">{{ .Title }}</h5>
+      <p class="card-text">{{ .Description }}</p>
+      {{ with .Params.params.button }}
+      <a href="{{ .URL }}" class="btn btn-primary">
+        {{ if .icon }}<i class="{{ .icon }}"></i>{{ end }}
+        {{ .btnText }}
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</div>

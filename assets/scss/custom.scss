@@ -1,0 +1,27 @@
+/* 自定义样式 - 将图片向右移动 */
+
+/* 覆盖默认的image-left-overflow样式 */
+.section div[class*="col-"] img.image-left-overflow {
+  margin-left: 30px !important; /* 正值向右移动图片 */
+}
+
+@media (min-width: 768px) {
+  .section div[class*="col-"] img.image-left-overflow {
+    margin-left: 0px !important; /* 中等屏幕时居中 */
+  }
+}
+
+@media (min-width: 992px) {
+  .section div[class*="col-"] img.image-left-overflow {
+    margin-left: 20px !important; /* 大屏幕时向右移动20px */
+  }
+}
+
+/* 修改about部分的列宽，以调整位置 */
+@media (min-width: 768px) {
+  .about__profile-picture {
+    flex: 0 0 45% !important; /* 减小左侧列宽 */
+    max-width: 45% !important;
+    margin-right: 5% !important; /* 添加右侧间距 */
+  }
+} 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Educations on </title>
+    <link>http://localhost:1313/education/</link>
+    <description>Recent content in Educations on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Northeastern University Vancouver</title>
+      <link>http://localhost:1313/education/high-school/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/education/high-school/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Period&lt;/strong&gt;: Sep 2023 - Present&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Modules&lt;/strong&gt;: Python Programming, Machine Learning, Natural Language Processing, Web Development (Node.js APIs), Database Management (PostgreSQL), AWS Cloud, Artificial Intelligence, Computer Vision, Human-Computer Interaction&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>University of Western Ontario, Huron University College</title>
+      <link>http://localhost:1313/education/western-ontario/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/education/western-ontario/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Period&lt;/strong&gt;: Sept 2021 - Jan 2022&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Beijing Language and Culture University</title>
+      <link>http://localhost:1313/education/university-of-life/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/education/university-of-life/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Period&lt;/strong&gt;: Sept 2019 - Jun 2023&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Modules&lt;/strong&gt;: Computational Linguistics, Python Data Analysis, Information Management, Finance and Banking, International Relations, Spanish-Chinese-English Interpretation&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

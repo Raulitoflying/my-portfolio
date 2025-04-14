@@ -1,0 +1,69 @@
+{{ $contextType := printf "%T" . }}
+{{ $isShortcode := (eq $contextType "*hugolib.ShortcodeWithPage") }}
+
+<section id="projects-single" class="container section-experience section section--border-bottom rad-animation-group flex-grow-1">
+  <div class="row flex-column-reverse flex-md-row rad-fade-down">
+    <div class="experience-list col-12 col-md-6">
+      <h2>
+        {{ if $isShortcode }}
+          {{ .Get "title" | default "" }}
+        {{ else }}
+          {{ i18n "projects_title" }}
+        {{ end }}
+      </h2>
+
+      {{ $projects := where .Site.RegularPages.ByDate "Type" "projects" }}
+      {{ if not $isShortcode }}
+        {{ $baseLangSite := .Sites.Default }}
+        {{ $projects = $projects | lang.Merge (where $baseLangSite.RegularPages.ByDate.Reverse "Type" "projects") }}
+      {{ end }}
+
+      {{ $projectsCount := len $projects }}
+      {{ $totalCount := .Site.Params.homepageProjectsCount | default 6 }}
+
+      {{ if not $isShortcode }}
+      {{ if not .IsHome }}
+        {{ $totalCount = $projectsCount }}
+      {{ end }}
+      {{ end }}
+
+      {{ range first $totalCount (sort $projects "Date" "desc") }}
+      <div class="experience">
+        <a href="{{ .Permalink | relURL }}" class="experience__link">
+          <div class="experience__header">
+            {{ $img := resources.Get .Params.projectImage }}
+            {{ with $img }}
+              {{ $imgWebp := $img.Resize (printf "%dx%d webp q75 Lanczos picture" $img.Width $img.Height) }}
+              <img 
+                src="{{ $imgWebp.RelPermalink }}" 
+                alt="{{ .Params.title }} preview"
+                class="experience__company-logo"
+                loading="lazy"
+              />
+            {{ end }}
+            <div class="experience__meta">
+              <div class="experience__date">{{ .Date.Format "Jan 2006" }}</div>
+              <div class="experience__title">{{ .Title }}</div>
+              <div class="experience__company">{{ .Params.technologies }}</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+
+      {{ if gt $projectsCount $totalCount }}
+      <div class="all-experience-container">
+        {{ $projectsExtra := sub $projectsCount $totalCount }}
+        <em>And {{ $projectsExtra }} more</em><br />
+        <a href="{{ absURL "projects" | relLangURL }}" class="btn btn-primary btn-all-experience">
+          <i class="icon-folder"></i>
+          View All Projects
+        </a>
+      </div>
+      {{ end }}
+    </div>
+    <div class="experience-description col-12 col-md-6">
+      {{ partial "projects-description.html" . }}
+    </div>
+  </div>
+</section>
