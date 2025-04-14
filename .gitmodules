@@ -1,0 +1,6 @@
+# Removed the submodule reference for the theme
+[submodule "themes/adritian"]
+path = themes/adritian
+url = https://github.com/zetxek/adritian-free-hugo-theme.git
+
+# Removed .gitmodules file to integrate the theme directly into the main project.
